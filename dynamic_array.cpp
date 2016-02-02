@@ -1,9 +1,9 @@
 
 /************************************************************************/
 /*
-1、使用C语言方式模拟二维数组的动态开辟与释放
-2、使用C++ 语言方式模拟二维数组的动态开辟与释放
-3、扩展多维数组的动态开辟与释放                                                                     */
+1銆佷娇鐢–璇█鏂瑰紡妯℃嫙浜岀淮鏁扮粍鐨勫姩鎬佸紑杈熶笌閲婃斁
+2銆佷娇鐢–++ 璇█鏂瑰紡妯℃嫙浜岀淮鏁扮粍鐨勫姩鎬佸紑杈熶笌閲婃斁
+3銆佹墿灞曞缁存暟缁勭殑鍔ㄦ�佸紑杈熶笌閲婃斁                                                                     */
 /************************************************************************/
 
 #include <stdio.h>
@@ -11,14 +11,14 @@
 #include <malloc.h>
 #include <stdlib.h>
 #include <vld.h>
-//目标是出现No memory leaks detected
+//鐩爣鏄嚭鐜癗o memory leaks detected
 #define Type int   //char int
 #define ROW 3
 #define COL 4
 
 Type** _New(int row, int col)
 {
-	Type **p = new Type *[row];//申请数组指针空间
+	Type **p = new Type *[row];//鐢宠鏁扮粍鎸囬拡绌洪棿
 	assert(p != NULL);
 	for (int i = 0; i < row; ++i)
 	{
@@ -56,9 +56,9 @@ void _Delete(Type **p, int row)
 {
 	for (int i = 0; i < row; ++i)
 	{
-		delete[]p[i];//c++ 释放数组空间
+		delete[]p[i];//c++ 閲婃斁鏁扮粍绌洪棿
 	}
-	delete[]p;//c++释放数组
+	delete[]p;//c++閲婃斁鏁扮粍
 
 }
 

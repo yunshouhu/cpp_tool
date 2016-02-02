@@ -1,6 +1,6 @@
 
 /************************************************************************/
-/*ÈýÎ¬Êý×é                                                               */
+/*ä¸‰ç»´æ•°ç»„                                                               */
 /************************************************************************/
 
 #include <assert.h>
@@ -9,14 +9,14 @@
 #include <vld.h>
 #include <iostream>
 using namespace std;
-//Ä¿±êÊÇ³öÏÖNo memory leaks detected
+//ç›®æ ‡æ˜¯å‡ºçŽ°No memory leaks detected
 #define Type int   //char int
 #define ROW 3
 #define COL 4
 #define Z 3
 
 
-typedef Type(*Arr)[ROW][COL];//ÈýÎ¬Êý×éÖ¸Õë£¬¿ª±ÙCOLÁÐÊý×é
+typedef Type(*Arr)[ROW][COL];//ä¸‰ç»´æ•°ç»„æŒ‡é’ˆï¼Œå¼€è¾ŸCOLåˆ—æ•°ç»„
 
 Arr _New()
 {
@@ -54,7 +54,7 @@ void _Print(Arr p)
 }
 void _Delete(Arr p)
 {
-	delete []p;//c++ÊÍ·ÅÊý×é
+	delete []p;//c++é‡Šæ”¾æ•°ç»„
 
 }
 
