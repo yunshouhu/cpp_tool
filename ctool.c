@@ -34,7 +34,7 @@ char* intToStr(int number)
 	//char buffer[1024];
 	//sprintf(buffer, "%d", number);
 	//return buffer;
-	//ç›´æ¥ä½¿ç”¨ä¸Šé¢æ–¹æ³• ä¸ç”¨è¿›å…¥å‡½æ•°å †æ ˆä¸­
+	//Ö±½ÓÊ¹ÓÃÉÏÃæ·½·¨ ²»ÓÃ½øÈëº¯Êı¶ÑÕ»ÖĞ
 	return "";
 }
 
@@ -64,7 +64,7 @@ long my_atol(const char *nptr)
 	else
 		return total; /* return result, negated if necessary */
 }
-//è‡ªå·±å®ç°my_atoi å› ä¸ºatoiä¸ºéæ ‡å‡†cå‡½æ•°
+//×Ô¼ºÊµÏÖmy_atoi ÒòÎªatoiÎª·Ç±ê×¼cº¯Êı
 int  my_atoi(const char *nptr)
 {
 	return (int)my_atol(nptr);
@@ -72,7 +72,7 @@ int  my_atoi(const char *nptr)
 
 void charToStr(char ch,char **buffer)
 {
-	//çº¯cè¯­è¨€æ²¡æœ‰å¼•ç”¨ c++å°±å¯ä»¥
+	//´¿cÓïÑÔÃ»ÓĞÒıÓÃ c++¾Í¿ÉÒÔ
 	//sprintf(*buffer, "%c", ch);
 	/**
 	001

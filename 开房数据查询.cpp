@@ -37,7 +37,7 @@ void getCurrentFileList(std::vector<std::string> &filelist,char *ext)
 	_chdir(".");
 	if ((file = _findfirst("*.*", &find)) == -1L)
 	{
-		//printf("ç©ºç™½!\n");		
+		//printf("¿Õ°×!\n");		
 	}
 	if(endWith(find.name,ext))
 	{
@@ -58,7 +58,7 @@ int readFile(char* filename,char *query)
 	FILE* fp = fopen(filename, "r");
 	if (fp == NULL)
 	{
-		printf("è¯»å–æ–‡ä»¶%så¤±è´¥!", filename);
+		printf("¶ÁÈ¡ÎÄ¼ş%sÊ§°Ü!", filename);
 		return -1;
 	}
 	bool isPrinfFileName = false;
@@ -81,7 +81,7 @@ int readFile(char* filename,char *query)
 	fclose(fp);
 	return 0;
 }
-//kaifangå¼€æˆ¿æ•°æ®æŸ¥è¯¢.exe android .txt  æŠŠtxtæ–‡ä»¶æ”¾åœ¨åŒä¸€ä¸ªç›®å½•ä¸‹
+//kaifang¿ª·¿Êı¾İ²éÑ¯.exe android .txt  °ÑtxtÎÄ¼ş·ÅÔÚÍ¬Ò»¸öÄ¿Â¼ÏÂ
 int main(int argc,char *argv[])
 {
 	char *query = "hehe";
@@ -111,7 +111,7 @@ int main(int argc,char *argv[])
 	}
 	time(&endTime);
 
-	printf("æŸ¥è¯¢%s,æ€»å…±èŠ±è´¹%.2fç§’\n",query, difftime(endTime, startTime));
+	printf("²éÑ¯%s,×Ü¹²»¨·Ñ%.2fÃë\n",query, difftime(endTime, startTime));
 
 	return 0;
 }

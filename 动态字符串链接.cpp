@@ -6,13 +6,13 @@
 #include <cstring>
 #include <string>
 
-//C++è°ƒç”¨cå‡½æ•°
+//C++µ÷ÓÃcº¯Êı
 //http://blog.csdn.net/imcainiao11/article/details/7369447
 extern "C" {
 	#include "string_buffer.h"
 }
 
-//æ•ˆæœå’Œstrcatä¸€æ ·
+//Ğ§¹ûºÍstrcatÒ»Ñù
 void my_strcat(char* a,char* b,char **str)
 {
 	int a_len = strlen(a);
@@ -23,7 +23,7 @@ void my_strcat(char* a,char* b,char **str)
 	strcpy(*str, a);
 	strcat(*str, b);
 }
-//æ•ˆæœå’Œstrcatä¸€æ ·
+//Ğ§¹ûºÍstrcatÒ»Ñù
 void my_strcat2(char* a, char* b, char **str)
 {
 	int a_len = strlen(a);
@@ -62,7 +62,7 @@ int string_append_n(char *self, const char *str, size_t n,int self_length)
 	self[self_length] = '\0';
 	return self_length;
 }
-//çœŸæ­£å®ç°cè¯­è¨€çš„string_append
+//ÕæÕıÊµÏÖcÓïÑÔµÄstring_append
 int string_append(char *self, const char *str, int self_length)
 {
 	return string_append_n(self, str, strlen(str), self_length);
@@ -84,25 +84,25 @@ int main()
 	printf("%s\n", str);
 	my_strcat2("java2", "android2", &str);
 	printf("%s\n", str);
-	//free(str); //ç¨‹åºä¼šå¡ä½
+	//free(str); //³ÌĞò»á¿¨×¡
 	*/
 
 	StringBuffer *sb=string_buffer_new();
 	int len_i = string_buffer_append(sb, "123456");
 	len_i=string_buffer_append(sb, "android");
-	len_i = string_buffer_append(sb, "javaä¸­æ–‡");
+	len_i = string_buffer_append(sb, "javaÖĞÎÄ");
 	printf("%s\n", string_buffer_get_string(sb));
 
 	//char *pdata = NULL;
-	//len_i = string_init(&pdata,"æˆ‘æ¥è‡ªä¸­å›½");
+	//len_i = string_init(&pdata,"ÎÒÀ´×ÔÖĞ¹ú");
 
-	char *pdata = "æˆ‘æ¥è‡ªä¸­å›½";
+	char *pdata = "ÎÒÀ´×ÔÖĞ¹ú";
 	len_i = string_init(&pdata, pdata);
 	len_i= string_append(pdata, "test", len_i);
 	printf("%s\n", pdata);
 	len_i = string_append(pdata, "android", len_i);
 	printf("%s\n", pdata);
-	len_i = string_append(pdata, "javaé¾™é£å‡¤èˆ", len_i);
+	len_i = string_append(pdata, "javaÁú·É·ïÎè", len_i);
 	printf("%s\n", pdata);
 
 	return 0;

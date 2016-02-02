@@ -6,13 +6,13 @@ using namespace std;
 struct stu {
 	int score;
 	bool operator<(const stu &s) const {
-		//return score <= s.score; //è¿™æ®µä»£ç ä¼šå‡ºç°å†…å­˜è¶Šç•Œï¼Œåº”è¯¥ç®—æ˜¯stl sortä¸€ä¸ªå®¹æ˜“è¸©åˆ°çš„å‘
+		//return score <= s.score; //Õâ¶Î´úÂë»á³öÏÖÄÚ´æÔ½½ç£¬Ó¦¸ÃËãÊÇstl sortÒ»¸öÈİÒ×²Èµ½µÄ¿Ó
 		return score > s.score;
 
 	}
 };
 
-//è¿™æ®µä»£ç ä¼šå‡ºç°å†…å­˜è¶Šç•Œï¼Œåº”è¯¥ç®—æ˜¯stl sortä¸€ä¸ªå®¹æ˜“è¸©åˆ°çš„å‘
+//Õâ¶Î´úÂë»á³öÏÖÄÚ´æÔ½½ç£¬Ó¦¸ÃËãÊÇstl sortÒ»¸öÈİÒ×²Èµ½µÄ¿Ó
 //http://www.zhihu.com/question/26901409
 int main(int argvc, char **argv) {
 	vector<stu> v;

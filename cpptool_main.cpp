@@ -13,7 +13,7 @@ void test_stringx()
 
 	printf("%s\n", boolToStr(string_equal("test_txt", "test_txt")));
 	printf("%s\n", string_clone("test_txt"));
-	printf("%s\n", string_join("ä¸­æ–‡_", string_join("test_txt", "_hehe")));
+	printf("%s\n", string_join("ÖĞÎÄ_", string_join("test_txt", "_hehe")));
 
 	printf("%s\n", boolToStr(string_isNullOrEmpty("test.txt")));
 	printf("%s\n", boolToStr(string_isNullOrEmpty("")));
@@ -25,17 +25,17 @@ void test_stringx()
 	printf("%s %s\n", boolToStr(string_endsWith("test.txt", "txt")), boolToStr(string_endsWith("test.txt", "txxdxt")));
 	printf("%s %s\n", boolToStr(string_startsWith("test.txt", "test")), boolToStr(string_startsWith("test.txt", "1test")));
 
-	printf("%s\n", string_replace("123abc123edfgh123ijklm123nop123qrsvx123", "123", "ä½ æ˜¯çŒª"));
+	printf("%s\n", string_replace("123abc123edfgh123ijklm123nop123qrsvx123", "123", "ÄãÊÇÖí"));
 
 
 	printf("%s\n", string_toLower("WWW.BAIDU.COM"));
 	printf("%s\n", string_toUpper("www.baidu.com"));
-	//æŠ‘æˆ–åŠ å¯†
-	char p[1024] = { 0 };;//åªèƒ½ä½¿ç”¨éconst
+	//ÒÖ»ò¼ÓÃÜ
+	char p[1024] = { 0 };;//Ö»ÄÜÊ¹ÓÃ·Çconst
 	strcpy(p, "www.baidu.com");
 	printf("%s\n", string_XORcypher(p, "java"));
 
-	//éšæœºå­—ç¬¦ä¸²
+	//Ëæ»ú×Ö·û´®
 	printf("%s\n", string_random(15));
 	printf("%s\n", string_htmlEncode("www.baidu.com"));
 	printf("%s\n", string_urlEncode("www.baidu.com"));

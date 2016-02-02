@@ -1,5 +1,4 @@
 #pragma once
-
 #define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,7 +14,7 @@
 #define BOOL int
 #define TRUE 1
 #define FALSE 0
-//ç›®æ ‡æ˜¯å®ç°è·¨å¹³å°çš„åŸºæœ¬åº“ï¼Œç±»ä¼¼javaçš„apiä¸€æ ·
+//Ä¿±êÊÇÊµÏÖ¿çÆ½Ì¨µÄ»ù±¾¿â£¬ÀàËÆjavaµÄapiÒ»Ñù
 BOOL startsWith(const char* str, const char* token);
 BOOL endWith(const char * str, const char * end);
 char* boolToStr(BOOL flag);
