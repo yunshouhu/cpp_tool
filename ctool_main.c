@@ -129,11 +129,13 @@ void test_ctool()
 }
 void test_debug()
 {
-	__info("hehe");
+	//__info("hehe");
 	
 	//__warn("hehe__warn");
 	//__fatal("hehe __fatal");
 
+	outputMsg("hehe Äã¸ÃËÀ");
+	outputMsg("hehe fuck");
 
 }
 int main(int argc, char *argv[])

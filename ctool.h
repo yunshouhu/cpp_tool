@@ -11,6 +11,8 @@
 #include <direct.h>
 #include <ctype.h>
 #include <sys/stat.h>
+#include <stdarg.h>
+
 #define BOOL int
 #define TRUE 1
 #define FALSE 0
@@ -39,6 +41,8 @@ char * right(char *dst, char *src, int n);
 
 int file_exists(char *path);
 off_t file_size(char *path);
+
+void outputMsg(const char *format, ...);
 
 
 
