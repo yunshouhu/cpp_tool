@@ -49,5 +49,17 @@ int main(int argc, char* argv)
 	cout << transform(2, 10, "10000010") << endl;
 	cout << transform(2, 16, "10000010") << endl;
 
+	int aa,bb,cc,dd; 
+
+	aa = bb = cc = dd = 1; 
+	aa = bb = cc = dd = 1; 
+	aa = bb = cc = dd = 1;
+	
+	(aa + 1 == 2) ? bb = aa + 2 : aa + 3;
+	cout << aa << bb << endl;
+
+
+	char A[]= "He has Ǯ!";
+	cout << strlen(A) << endl;
 	return 0;
 }
