@@ -12,7 +12,6 @@
 #include <string>
 #include <iostream>
 #include <iterator>
-
 using namespace std;
 
 
