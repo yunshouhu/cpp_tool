@@ -118,6 +118,13 @@ void test_ctool()
 	printf("%s\n", intToStr(10245));
 	printf("%s\n", charToStr('A'));
 
+	char dest[1024]={0};
+	substr(dest, "123456789", 6, 5);
+	printf("%s\n", dest);
+
+	printf("%s\n", left(dest,"abcdefghijk",5));
+	printf("%s\n", right(dest, "abcdefghijk8", 5));
+	printf("%s\n", mid(dest, "abcdefghijk", 5,2));
 
 }
 void test_debug()

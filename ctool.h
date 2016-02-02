@@ -25,6 +25,14 @@ int  my_atoi(const char *nptr);
 char *charToStr(char ch);
 int* charsToInts(char *s);
 int str_pos(char *str, char *chr);
+char * substr(char *dest, const char* src, unsigned int start, unsigned int len);
+
+/*从字符串的左边截取n个字符*/
+char * left(char *dst, char *src, int n);
+/*从字符串的中间截取n个字符*/
+char * mid(char *dst, char *src, int n, int m);
+/*从字符串的右边截取n个字符*/
+char * right(char *dst, char *src, int n);
 
 //file_util
 //https://github.com/justinkadima/cosmonaut/blob/master/src/string_util.c
