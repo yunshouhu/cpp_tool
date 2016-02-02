@@ -63,7 +63,7 @@ void getCurrentFileList(std::vector<std::string> &filelist, char *ext)
 	_chdir(".");
 	if ((file = _findfirst("*.*", &find)) == -1L)
 	{
-		//printf("¿Õ°×!\n");		
+			return ;
 	}
 	if (endWith(find.name, ext))
 	{

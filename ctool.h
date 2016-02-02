@@ -15,7 +15,7 @@
 #define BOOL int
 #define TRUE 1
 #define FALSE 0
-//Ä¿±êÊÇÊµÏÖ¿çÆ½Ì¨µÄ»ù±¾¿â£¬ÀàËÆjavaµÄapiÒ»Ñù
+//ç›®æ ‡æ˜¯å®ç°è·¨å¹³å°çš„åŸºæœ¬åº“ï¼Œç±»ä¼¼javaçš„apiä¸€æ ·
 BOOL startsWith(const char* str, const char* token);
 BOOL endWith(const char * str, const char * end);
 char* boolToStr(BOOL flag);

@@ -59,7 +59,7 @@ int main(int argc, char* argv)
 	cout << aa << bb << endl;
 
 
-	char A[]= "He has Ǯ!";
+	char A[]= "He has tez !";
 	cout << strlen(A) << endl;
 	return 0;
 }
