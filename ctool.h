@@ -22,7 +22,8 @@ char* intToStr(int number);
 long my_atol(const char *nptr);
 //char*=>int
 int  my_atoi(const char *nptr);
-void charToStr(char ch, char **buffer);
+char *charToStr(char ch);
+int* charsToInts(char *s);
 int str_pos(char *str, char *chr);
 
 //file_util

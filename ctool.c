@@ -31,11 +31,9 @@ char* boolToStr(BOOL flag)
 
 char* intToStr(int number)
 {
-	//char buffer[1024];
-	//sprintf(buffer, "%d", number);
-	//return buffer;
-	//直接使用上面方法 不用进入函数堆栈中
-	return "";
+	static char buffer[1024];
+	sprintf(buffer, "%d", number);
+	return buffer;
 }
 
 
@@ -70,7 +68,7 @@ int  my_atoi(const char *nptr)
 	return (int)my_atol(nptr);
 }
 
-void charToStr(char ch,char **buffer)
+char *charToStr(char ch)
 {
 	//纯c语言没有引用 c++就可以
 	//sprintf(*buffer, "%c", ch);
@@ -79,14 +77,21 @@ void charToStr(char ch,char **buffer)
 	char p = 'B';
 	char data[2] = {0};
 	data[0] = p;
-	printf("%s\n", data);
-
-	002
-	char data[2] = { 0 };
-	sprintf(data, "%c", temp);
+	printf("%s\n", data);	
 	*/
-
-
+	static	char data[2] = { 0 };
+	sprintf(data, "%c", ch);
+	return data;
+}
+int* charsToInts(char *s)
+{
+	int len = strlen(s);
+	int *arr = (int*)malloc(sizeof(int)*len);
+	for (int i = 0; i < len; i++)
+	{
+		arr[i] = s[i] - '0';
+	}
+	return arr;
 }
 //https://github.com/justinkadima/cosmonaut/blob/master/src/string_util.c
 int str_pos(char *str, char *chr)

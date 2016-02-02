@@ -68,10 +68,10 @@ void test_stringx()
 	printf("%s %s\n", boolToStr(string_endsWith("test.txt", "txt")), boolToStr(string_endsWith("test.txt", "txxdxt")));
 	printf("%s %s\n", boolToStr(string_startsWith("test.txt", "test")), boolToStr(string_startsWith("test.txt", "1test")));
 
-	//printf("%s \n", string_replace("123abc123edfgh123ijklm123nop123qrsvx123", "123", "你是猪"));
+	printf("%s \n", string_replace("123abc123edfgh123ijklm123nop123qrsvx123", "123", "你是猪"));
 
 
-	//printf("%s\n", string_toLower("WWW.BAIDU.COM"));
+	printf("%s\n", string_toLower("WWW.BAIDU.COM"));
 	printf("%s\n", string_toUpper("www.baidu.com"));
 	//抑或加密
 	char p[1024] = { 0 };;//只能使用非const
@@ -87,7 +87,7 @@ void test_stringx()
 void test_ctool()
 {
 	printf("%s\n", boolToStr(endWith("test.txt", "txt")));
-	//printf("%s\n", boolToStr(startsWith("test.txt", "test")));
+	printf("%s\n", boolToStr(startsWith("test.txt", "test")));
 
 	printf("%s\n", intToStr(1024));
 	printf("%d\n", my_atoi("1024"));
@@ -106,6 +106,18 @@ void test_ctool()
 
 	printf("%s\n", boolToStr(file_exists("d://test.txt")));
 	printf("%d\n", file_size("d://test.txt"));
+
+
+	char *s = "1234789";
+	int *arr2 = charsToInts(s);
+	for (int i = 0; i < strlen(s); i++)
+	{
+		printf("%d", arr2[i]);
+	}
+	printf("\n");
+	printf("%s\n", intToStr(10245));
+	printf("%s\n", charToStr('A'));
+
 
 }
 void test_debug()
