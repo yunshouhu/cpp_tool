@@ -162,3 +162,21 @@ off_t file_size(char *path) {
 	stat(path, &st);
 	return st.st_size;
 }
+
+
+void outputMsg(const char *format, ...)
+{
+	static FILE *output_fp;
+
+	if (output_fp == NULL)
+		output_fp = fopen("msg.txt", "w");
+
+	if (output_fp == NULL)
+		return;
+	va_list args;
+	va_start(args, format);
+	vfprintf(output_fp, format, args);
+	fprintf(output_fp, "\n");
+	va_end(args);
+	fflush(output_fp);
+}
